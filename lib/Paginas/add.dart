@@ -9,6 +9,9 @@ class _AddState extends State<Add> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Chats'),
+      ),
       body: CustomScrollView(
         slivers: <Widget>[
           SliverAppBar(
@@ -23,39 +26,154 @@ class _AddState extends State<Add> {
               ),
             ),
           ),
-          SliverFillRemaining(
-            child: Align(
-              alignment: Alignment(2, 0.2),
-              child: Card(
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: <Widget>[
-                    const ListTile(
-                      leading: Icon(Icons.album),
-                      title: Text('The Enchanted Nightingale'),
-                      subtitle:
-                          Text('Music by Julie Gable. Lyrics by Sidney Stein.'),
-                    ),
-                    ButtonTheme.bar(
-                      // make buttons use the appropriate styles for cards
-                      child: ButtonBar(
-                        children: <Widget>[
-                          FlatButton(
-                            child: const Text('BUY TICKETS'),
-                            onPressed: () {/* ... */},
+          SliverPadding(
+              padding: const EdgeInsets.all(20),
+              sliver: SliverGrid.count(
+                crossAxisSpacing: 10,
+                mainAxisSpacing: 10,
+                crossAxisCount: 1,
+                childAspectRatio: 2.5,
+                children: <Widget>[
+                  Container(
+                    alignment: Alignment(0, -0.7),
+                    padding: const EdgeInsets.all(10.0),
+                    decoration: new BoxDecoration(
+                      color: Colors.white,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey,
+                          blurRadius:
+                              10.0, // has the effect of softening the shadow
+                          spreadRadius:
+                              2.5, // has the effect of extending the shadow
+                          offset: Offset(
+                            5.0, // horizontal, move right 10
+                            5.0, // vertical, move down 10
                           ),
-                          FlatButton(
-                            child: const Text('LISTEN'),
-                            onPressed: () {/* ... */},
-                          ),
-                        ],
-                      ),
+                        )
+                      ],
                     ),
-                  ],
-                ),
-              ),
-            ),
-          )
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: <Widget>[
+                        const ListTile(
+                          leading: Icon(Icons.album),
+                          title: Text('The Enchanted Nightingale'),
+                          subtitle: Text(
+                              'Music by Julie Gable. Lyrics by Sidney Stein.'),
+                        ),
+                        ButtonTheme.bar(
+                          // make buttons use the appropriate styles for cards
+                          child: ButtonBar(
+                            children: <Widget>[
+                              FlatButton(
+                                child: const Text('BUY TICKETS'),
+                                onPressed: () {/* ... */},
+                              ),
+                              FlatButton(
+                                child: const Text('LISTEN'),
+                                onPressed: () {/* ... */},
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    width: 380.0,
+                    padding: const EdgeInsets.all(10.0),
+                    decoration: new BoxDecoration(
+                      color: Colors.white,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey,
+                          blurRadius:
+                              10.0, // has the effect of softening the shadow
+                          spreadRadius:
+                              2.5, // has the effect of extending the shadow
+                          offset: Offset(
+                            5.0, // horizontal, move right 10
+                            5.0, // vertical, move down 10
+                          ),
+                        )
+                      ],
+                    ),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: <Widget>[
+                        const ListTile(
+                          leading: Icon(Icons.album),
+                          title: Text('The Enchanted Nightingale'),
+                          subtitle: Text(
+                              'Music by Julie Gable. Lyrics by Sidney Stein.'),
+                        ),
+                        ButtonTheme.bar(
+                          // make buttons use the appropriate styles for cards
+                          child: ButtonBar(
+                            children: <Widget>[
+                              FlatButton(
+                                child: const Text('BUY TICKETS'),
+                                onPressed: () {/* ... */},
+                              ),
+                              FlatButton(
+                                child: const Text('LISTEN'),
+                                onPressed: () {/* ... */},
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    width: 380.0,
+                    padding: const EdgeInsets.all(10.0),
+                    decoration: new BoxDecoration(
+                      color: Colors.white,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey,
+                          blurRadius:
+                              10.0, // has the effect of softening the shadow
+                          spreadRadius:
+                              2.5, // has the effect of extending the shadow
+                          offset: Offset(
+                            5.0, // horizontal, move right 10
+                            5.0, // vertical, move down 10
+                          ),
+                        )
+                      ],
+                    ),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: <Widget>[
+                        const ListTile(
+                          leading: Icon(Icons.album),
+                          title: Text('The Enchanted Nightingale'),
+                          subtitle: Text(
+                              'Music by Julie Gable. Lyrics by Sidney Stein.'),
+                        ),
+                        ButtonTheme.bar(
+                          // make buttons use the appropriate styles for cards
+                          child: ButtonBar(
+                            children: <Widget>[
+                              FlatButton(
+                                child: const Text('BUY TICKETS'),
+                                onPressed: () {/* ... */},
+                              ),
+                              FlatButton(
+                                child: const Text('LISTEN'),
+                                onPressed: () {/* ... */},
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              )),
         ],
       ),
     );
