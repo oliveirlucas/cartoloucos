@@ -16,14 +16,14 @@ class _HomeState extends State<Home> {
 
   int currentTab = 0; // to keep track of active tab index
   final List<Widget> screens = [
+    Add(),
     Dashboard(),
     Chat(),
     Profile(),
     Settings(),
-    Add(),
   ]; // to store nested tabs
   final PageStorageBucket bucket = PageStorageBucket();
-  Widget currentScreen = Dashboard(); // Our first view in viewport
+  Widget currentScreen = Add(); // Our first view in viewport
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +33,8 @@ class _HomeState extends State<Home> {
         bucket: bucket,
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
+        child: Icon(Icons.add,color: Colors.black,),
+        backgroundColor: Colors.lightBlue[600],
         onPressed: () {
           setState(() {
             currentScreen =
@@ -46,6 +47,7 @@ class _HomeState extends State<Home> {
       bottomNavigationBar: BottomAppBar(
         shape: CircularNotchedRectangle(),
         notchMargin: 10,
+        color: Colors.black,
         child: Container(
           height: 60,
           child: Row(
