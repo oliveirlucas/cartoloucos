@@ -1,16 +1,9 @@
 # cartoloucos
 
-A new Flutter project.
+Apis
 
-## Getting Started
+Trazer dados do time = https://api.cartolafc.globo.com/times?q=%20quebrandoregras
+Busca pelo time = https://api.cartolafc.globo.com/busca?q=quebrandoregras
+Busca time pelo id e rodada = https://api.cartolafc.globo.com/time/id/4744495/31
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Codigo git com todos os links API cartola = https://github.com/wgenial/cartrolandofc/blob/master/nova-api.md
