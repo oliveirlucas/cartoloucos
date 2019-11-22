@@ -1,5 +1,7 @@
 # cartoloucos
 
+https://api.codemagic.io/apps/5dd80ed5eda3b30018a01b2e/5dd80ed5eda3b30018a01b2d/status_badge.svg
+
 Apis
 
 Trazer dados do time = https://api.cartolafc.globo.com/times?q=%20quebrandoregras
