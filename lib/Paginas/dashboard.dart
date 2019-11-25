@@ -10,7 +10,39 @@ class _DashboardState extends State<Dashboard> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Dashboard'),
+        title: Text(''),
+      ),
+      body: DataTable(
+        columnSpacing: 15,
+        columns: [
+          DataColumn(label: Text('P')),
+          DataColumn(label: Text('')),
+          DataColumn(label: Text('Times')),
+          DataColumn(label: Text('PT')),
+          DataColumn(label: Text('V')),
+          DataColumn(label: Text('E')),
+          DataColumn(label: Text('D'))
+        ],
+        rows: [
+          DataRow(cells: [
+            DataCell(Text('1')),
+            DataCell(Image.network("https://s2.glbimg.com/PrWcUKiHMnubuTKDjF2CmJr0cms=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_139/escudo/8f/38/55/00c44bd23a-9602-42eb-9d9a-5bd170b2cf8f20190424123855")),
+            DataCell(Text('QuebrandoRegras')),
+            DataCell(Text('10')),
+            DataCell(Text('15')),
+            DataCell(Text('20')),
+            DataCell(Text('25')),
+          ]),
+          DataRow(cells: [
+            DataCell(Text('1')),
+            DataCell(Image.network("https://s2.glbimg.com/PrWcUKiHMnubuTKDjF2CmJr0cms=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_139/escudo/8f/38/55/00c44bd23a-9602-42eb-9d9a-5bd170b2cf8f20190424123855")),
+            DataCell(Text('QuebrandoRegras')),
+            DataCell(Text('10')),
+            DataCell(Text('15')),
+            DataCell(Text('20')),
+            DataCell(Text('25')),
+          ])
+        ],
       ),
     );
   }

@@ -33,7 +33,7 @@ class _HomeState extends State<Home> {
         bucket: bucket,
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add,color: Colors.black,),
+        child: Icon(Icons.home,color: Colors.black,),
         backgroundColor: Colors.lightBlue[600],
         onPressed: () {
           setState(() {
@@ -69,11 +69,11 @@ class _HomeState extends State<Home> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Icon(
-                          Icons.dashboard,
+                          Icons.table_chart,
                           color: currentTab == 0 ? Colors.blue : Colors.grey,
                         ),
                         Text(
-                          'Dashboard',
+                          'Tabela',
                           style: TextStyle(
                             color: currentTab == 0 ? Colors.blue : Colors.grey,
                           ),
