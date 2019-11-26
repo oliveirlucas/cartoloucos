@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
-class Chat extends StatefulWidget {
+class Jogos extends StatefulWidget {
   @override
-  _ChatState createState() => _ChatState();
+  _JogosState createState() => _JogosState();
 }
 
-class _ChatState extends State<Chat> {
+class _JogosState extends State<Jogos> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Chats'),
+        title: Text(''),
       ),
     );
   }

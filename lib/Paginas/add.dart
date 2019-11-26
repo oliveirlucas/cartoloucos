@@ -10,7 +10,7 @@ class _AddState extends State<Add> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Chats'),
+        title: Text(''),
       ),
       body: CustomScrollView(
         slivers: <Widget>[
@@ -21,7 +21,7 @@ class _AddState extends State<Add> {
             snap: false,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.network(
-                "https://media.metrolatam.com/2019/11/06/tesssouthhiresaz-96cb6d24540428907540ba113454f440-1200x600.jpg",
+                "https://i.ibb.co/3SRZTy4/tesssouthhiresaz-96cb6d24540428907540ba113454f440-1200x600.jpg",
                 fit: BoxFit.cover,
               ),
             ),

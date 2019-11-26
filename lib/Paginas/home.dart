@@ -2,7 +2,7 @@ import 'package:cartoloucos/paginas/profile.dart';
 import 'package:cartoloucos/paginas/settings.dart';
 import 'package:flutter/material.dart';
 
-import 'chat.dart';
+import 'jogos.dart';
 import 'dashboard.dart';
 import 'add.dart';
 
@@ -18,7 +18,7 @@ class _HomeState extends State<Home> {
   final List<Widget> screens = [
     Add(),
     Dashboard(),
-    Chat(),
+    Jogos(),
     Profile(),
     Settings(),
   ]; // to store nested tabs
@@ -39,7 +39,7 @@ class _HomeState extends State<Home> {
           setState(() {
             currentScreen =
             Add();
-            currentTab = 2;
+            currentTab = 0;
           });
       },
       ),
@@ -62,7 +62,7 @@ class _HomeState extends State<Home> {
                       setState(() {
                         currentScreen =
                             Dashboard(); // if user taps on this dashboard tab will be active
-                        currentTab = 0;
+                        currentTab = 2;
                       });
                     },
                     child: Column(
@@ -70,12 +70,12 @@ class _HomeState extends State<Home> {
                       children: <Widget>[
                         Icon(
                           Icons.dashboard,
-                          color: currentTab == 0 ? Colors.blue : Colors.grey,
+                          color: currentTab == 2 ? Colors.blue : Colors.grey,
                         ),
                         Text(
                           'Dashboard',
                           style: TextStyle(
-                            color: currentTab == 0 ? Colors.blue : Colors.grey,
+                            color: currentTab == 2 ? Colors.blue : Colors.grey,
                           ),
                         ),
                       ],
@@ -86,7 +86,7 @@ class _HomeState extends State<Home> {
                     onPressed: () {
                       setState(() {
                         currentScreen =
-                            Chat(); // if user taps on this dashboard tab will be active
+                            Jogos(); // if user taps on this dashboard tab will be active
                         currentTab = 1;
                       });
                     },
@@ -98,7 +98,7 @@ class _HomeState extends State<Home> {
                           color: currentTab == 1 ? Colors.blue : Colors.grey,
                         ),
                         Text(
-                          'Chats',
+                          'Jogos',
                           style: TextStyle(
                             color: currentTab == 1 ? Colors.blue : Colors.grey,
                           ),
