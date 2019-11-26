@@ -69,13 +69,8 @@ class _HomeState extends State<Home> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Icon(
-<<<<<<< HEAD
                           Icons.table_chart,
-                          color: currentTab == 0 ? Colors.blue : Colors.grey,
-=======
-                          Icons.dashboard,
                           color: currentTab == 2 ? Colors.blue : Colors.grey,
->>>>>>> master
                         ),
                         Text(
                           'Tabela',
