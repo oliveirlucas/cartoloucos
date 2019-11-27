@@ -12,6 +12,7 @@ class _AddState extends State<Add> {
       appBar: AppBar(
         title: Text(''),
       ),
+      backgroundColor: Colors.grey[200],
       body: CustomScrollView(
         slivers: <Widget>[
           SliverAppBar(
@@ -35,183 +36,75 @@ class _AddState extends State<Add> {
                 childAspectRatio: 2.5,
                 children: <Widget>[
                   Container(
-                    alignment: Alignment(0, -0.7),
-                    decoration: new BoxDecoration(
-                      color: Colors.white,
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey,
-                          blurRadius:
-                              10.0, // has the effect of softening the shadow
-                          spreadRadius:
-                              2.5, // has the effect of extending the shadow
-                          offset: Offset(
-                            5.0, // horizontal, move right 10
-                            5.0, // vertical, move down 10
-                          ),
-                        )
-                      ],
-                    ),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                        const ListTile(
-                          leading: Icon(Icons.album),
-                          title: Text('The Enchanted Nightingale'),
-                          subtitle: Text(
-                              'Music by Julie Gable. Lyrics by Sidney Stein.'),
-                        ),
-                        ButtonTheme.bar(
-                          // make buttons use the appropriate styles for cards
-                          child: ButtonBar(
-                            children: <Widget>[
-                              FlatButton(
-                                child: const Text('BUY TICKETS'),
-                                onPressed: () {/* ... */},
+                    child: new FittedBox(
+                      child: Material(
+                        color: Colors.black,
+                        elevation: 9.0,
+                        borderRadius: BorderRadius.circular(24.0),
+                        shadowColor: Colors.black,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            Container(
+                              width: 350,
+                              child: Padding(
+                                padding: const EdgeInsets.only(left: 16.0),
+                                child: myDetailsContainer1(),
                               ),
-                              FlatButton(
-                                child: const Text('LISTEN'),
-                                onPressed: () {/* ... */},
+                            ),
+                            Container(
+                              width: 195,
+                              height: 200,
+                              color: Colors.grey[400],
+                              child: ClipRRect(
+                                borderRadius: new BorderRadius.circular(24.0),
+                                child: Image(
+                                  fit: BoxFit.contain,
+                                  alignment: Alignment.topRight,
+                                  image: NetworkImage(
+                                      "https://s2.glbimg.com/PrWcUKiHMnubuTKDjF2CmJr0cms=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_139/escudo/8f/38/55/00c44bd23a-9602-42eb-9d9a-5bd170b2cf8f20190424123855"),
+                                ),
                               ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
-                      ],
+                      ),
                     ),
                   ),
                   Container(
-                    width: 380.0,
-                    decoration: new BoxDecoration(
-                      color: Colors.white,
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey,
-                          blurRadius:
-                              10.0, // has the effect of softening the shadow
-                          spreadRadius:
-                              2.5, // has the effect of extending the shadow
-                          offset: Offset(
-                            5.0, // horizontal, move right 10
-                            5.0, // vertical, move down 10
-                          ),
-                        )
-                      ],
-                    ),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                        const ListTile(
-                          leading: Icon(Icons.album),
-                          title: Text('The Enchanted Nightingale'),
-                          subtitle: Text(
-                              'Music by Julie Gable. Lyrics by Sidney Stein.'),
-                        ),
-                        ButtonTheme.bar(
-                          // make buttons use the appropriate styles for cards
-                          child: ButtonBar(
-                            children: <Widget>[
-                              FlatButton(
-                                child: const Text('BUY TICKETS'),
-                                onPressed: () {/* ... */},
+                    child: new FittedBox(
+                      child: Material(
+                        color: Colors.black,
+                        elevation: 9.0,
+                        borderRadius: BorderRadius.circular(24.0),
+                        shadowColor: Colors.black,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            Container(
+                              width: 195,
+                              height: 200,
+                              color: Colors.grey[400],
+                              child: ClipRRect(
+                                borderRadius: new BorderRadius.circular(24.0),
+                                child: Image(
+                                  fit: BoxFit.contain,
+                                  alignment: Alignment.topRight,
+                                  image: NetworkImage(
+                                      "https://s2.glbimg.com/eV3ZkUnHKJssPKFEAu855_hr4CQ=/https://s3.glbimg.com/v1/AUTH_58d78b787ec34892b5aaa0c7a146155f/cartola_svg_100/escudo/7c/25/42/0022f3e3dc-d54f-42c1-9dbf-ef0ce596fc7c20180322142542"),
+                                ),
                               ),
-                              FlatButton(
-                                child: const Text('LISTEN'),
-                                onPressed: () {/* ... */},
+                            ),
+                            Container(
+                              width: 350,
+                              child: Padding(
+                                padding: const EdgeInsets.only(left: 16.0),
+                                child: myDetailsContainer2(),
                               ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    width: 380.0,
-                    decoration: new BoxDecoration(
-                      color: Colors.white,
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey,
-                          blurRadius:
-                              10.0, // has the effect of softening the shadow
-                          spreadRadius:
-                              2.5, // has the effect of extending the shadow
-                          offset: Offset(
-                            5.0, // horizontal, move right 10
-                            5.0, // vertical, move down 10
-                          ),
-                        )
-                      ],
-                    ),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                        const ListTile(
-                          leading: Icon(Icons.album),
-                          title: Text('The Enchanted Nightingale'),
-                          subtitle: Text(
-                              'Music by Julie Gable. Lyrics by Sidney Stein.'),
-                        ),
-                        ButtonTheme.bar(
-                          // make buttons use the appropriate styles for cards
-                          child: ButtonBar(
-                            children: <Widget>[
-                              FlatButton(
-                                child: const Text('BUY TICKETS'),
-                                onPressed: () {/* ... */},
-                              ),
-                              FlatButton(
-                                child: const Text('LISTEN'),
-                                onPressed: () {/* ... */},
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    width: 380.0,
-                    decoration: new BoxDecoration(
-                      color: Colors.white,
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey,
-                          blurRadius:
-                              10.0, // has the effect of softening the shadow
-                          spreadRadius:
-                              2.5, // has the effect of extending the shadow
-                          offset: Offset(
-                            5.0, // horizontal, move right 10
-                            5.0, // vertical, move down 10
-                          ),
-                        )
-                      ],
-                    ),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                        const ListTile(
-                          leading: Icon(Icons.album),
-                          title: Text('The Enchanted Nightingale'),
-                          subtitle: Text(
-                              'Music by Julie Gable. Lyrics by Sidney Stein.'),
-                        ),
-                        ButtonTheme.bar(
-                          // make buttons use the appropriate styles for cards
-                          child: ButtonBar(
-                            children: <Widget>[
-                              FlatButton(
-                                child: const Text('BUY TICKETS'),
-                                onPressed: () {/* ... */},
-                              ),
-                              FlatButton(
-                                child: const Text('LISTEN'),
-                                onPressed: () {/* ... */},
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
+                      ),
                     ),
                   ),
                 ],
@@ -220,4 +113,72 @@ class _AddState extends State<Add> {
       ),
     );
   }
+}
+
+Widget myDetailsContainer1() {
+  return Column(
+    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    children: <Widget>[
+      Padding(
+        padding: const EdgeInsets.only(left: 8.0),
+        child: Container(
+            child: Text(
+          "QuebrandoRegras",
+          style: TextStyle(
+              color: Colors.white, fontSize: 35.0, fontWeight: FontWeight.w600),
+        )),
+      ),
+      Padding(
+        padding: const EdgeInsets.only(left: 8.0),
+        child: Container(
+            child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Container(
+                child: Text(
+              "Melhor da rodada",
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold),
+            )),
+          ],
+        )),
+      ),
+    ],
+  );
+}
+
+Widget myDetailsContainer2() {
+  return Column(
+    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    children: <Widget>[
+      Padding(
+        padding: const EdgeInsets.only(left: 8.0),
+        child: Container(
+            child: Text(
+          "Nando Ribeiro FC",
+          style: TextStyle(
+              color: Colors.white, fontSize: 35.0, fontWeight: FontWeight.w600),
+        )),
+      ),
+      Padding(
+        padding: const EdgeInsets.only(left: 8.0),
+        child: Container(
+            child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Container(
+                child: Text(
+              "Lanterna da liga",
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold),
+            )),
+          ],
+        )),
+      ),
+    ],
+  );
 }
